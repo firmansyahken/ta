@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+
+    <div class="navbar">
+      <h2>Transwisata</h2>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="form.html">Pesan Tiket</a></li>
+        <li><a href="evaluation.html">Evaluasi</a></li>
+        <li><a href="about.html">Tentang</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="content">
+        <form id="myform" method="post">
+            <div class="input_group">
+                <div class="input">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" name="nama" id="nama" placeholder="Maximal 24 Karakter">
+                    <p class="message" data-id="nama"></p>
+                </div>
+                <div class="input">
+                    <label for="no">No Telepon</label>
+                    <input type="text" name="no" id="no">
+                    <p class="message" data-id="no"></p>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                    <p class="message" data-id="email"></p>
+                </div>
+                <div class="input">
+                    <label for="tujuan">Tujuan</label>
+                    <select name="tujuan" id="tujuan">
+                        <option value="Dufan Ancol">Dufan Ancol</option>
+                        <option value="Gunung Bromo">Gunung Bromo</option>
+                        <option value="Coban Rondo">Coban Rondo</option>
+                    </select>
+                    <p class="message" data-id="tujuan"></p>
+                </div>
+            </div>
+            <div class="input">
+                <label for="alamat">Alamat</label>
+                <textarea name="alamat" id="alamat"></textarea>
+                <p class="message" data-id="alamat"></p>
+            </div>
+            <div>
+              <button class="fill" id="submit">Pesan Tiket</button>
+            </div>
+        </form>
+      </div>
+      <div class="sidebar">
+        <div class="menu">
+          <h2>Referensi</h2>
+          <div class="menu_item">
+            <img
+              src="https://images.unsplash.com/photo-1614140510679-96ae6ebd078e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=386&q=80"
+              alt="image"
+            />
+            <div>
+              <h4>PO Bus Haryanto</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="menu_item">
+            <img
+              src="https://images.unsplash.com/photo-1607207807806-075f273b0d0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              alt="image"
+            />
+            <div>
+              <h4>Niscala Java</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="menu_item">
+            <img
+              src="https://images.unsplash.com/photo-1571046314604-e32adfc8e11e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+              alt="image"
+            />
+            <div>
+              <h4>Jaya Raya Trans</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="validation.js"></script>
+  </body>
+</html>

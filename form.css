@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.navbar h2 {
+    font-size: 24px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.navbar ul li {
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 4rem 1.5rem;
+    box-sizing: border-box;
+    margin: auto;
+    column-gap: 50px;
+}
+
+.container .content {
+    width: 70%;
+}
+
+.input_group {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.input label {
+    font-size: 15px;
+}
+
+.input p {
+    color: red;
+    font-size: 13px;
+}
+
+input {
+    width: 100%; 
+    border: none;
+    border: 1.5px solid #c3c3c3;
+    font-size: 15px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    outline: none;
+    font-size: 15px;
+}
+
+input.error {
+    border: 1.5px solid red;
+}
+
+select {
+    outline: none;
+    border-radius: 7px;
+    width: 100%;
+    border: none;
+    border: 1.5px solid #c3c3c3;
+    font-size: 15px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+}
+
+textarea {
+    border-radius: 7px;
+    width: 100%;
+    height: 150px;
+    resize: none;
+    border: 1.5px solid #c3c3c3;
+    font-size: 15px;
+    padding: 7px 20px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+textarea.error {
+    border: 1.5px solid red;
+}
+
+button {
+    border-radius: 7px;
+    padding: 13px 30px;
+    font-size: 15px;
+}
+
+button.fill {
+    background-color: black;
+    color: white;
+}
+
+button.stroke {
+    background-color: transparent;
+
+} 
+
+.container .sidebar {
+    width: 30%;
+}
+
+.sidebar .menu {
+    position: sticky;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.sidebar .menu h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar .menu .menu_item {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.sidebar .menu .menu_item h4 {
+    font-size: 18px;
+}
+
+.sidebar .menu .menu_item p {
+    font-size: 13px;
+}
+
+.sidebar .menu .menu_item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
